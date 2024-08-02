@@ -1,0 +1,17 @@
+---
+- name: "Daten formatieren"
+  hosts: "localhost"
+
+  tasks:
+    - name: "Lese Eingabedaten ein"
+      set_fact:
+        input_data: "{{ lookup('file', 'input.json') }}"
+
+    - name: "Rufe Rolle auf"
+      include_role:
+        name: "process_data"
+
+    - name: "Erstelle JSON"
+      copy:
+        content: "{{ output_data | to_nice_json }}"
+        dest: "output.json"

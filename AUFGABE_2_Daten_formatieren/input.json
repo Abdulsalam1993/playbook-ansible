@@ -1,0 +1,693 @@
+{
+    "metaluna-eoc2-t1.freenet-dls.de": {
+        "ami_launch_index": 0,
+        "ansible_check_mode": false,
+        "ansible_config_file": null,
+        "ansible_diff_mode": false,
+        "ansible_facts": {},
+        "ansible_forks": 5,
+        "ansible_host": "10.209.156.45",
+        "ansible_inventory_sources": [
+            "/runner/inventory/hosts"
+        ],
+        "ansible_playbook_python": "/usr/bin/python3",
+        "ansible_run_tags": [
+            "all"
+        ],
+        "ansible_skip_tags": [],
+        "ansible_verbosity": 0,
+        "ansible_version": {
+            "full": "2.16.7",
+            "major": 2,
+            "minor": 16,
+            "revision": 7,
+            "string": "2.16.7"
+        },
+        "architecture": "x86_64",
+        "awx_inventory_id": 118,
+        "awx_inventory_name": "Testing - Smart Inventory - EC2",
+        "awx_job_id": 684576,
+        "awx_job_launch_type": "relaunch",
+        "awx_job_template_id": 872,
+        "awx_job_template_name": "Testing - EO - AWX-Inventory to JSON for PowerBI",
+        "awx_project_revision": "694a8094c0a2b46e71b5d5f2f2fdc01cc513ae32",
+        "awx_project_scm_branch": "testing",
+        "awx_user_email": "Boy.Reese@freenet.ag",
+        "awx_user_first_name": "Boy",
+        "awx_user_id": 42,
+        "awx_user_last_name": "Reese",
+        "awx_user_name": "breese",
+        "block_device_mappings": [
+            {
+                "device_name": "/dev/xvda",
+                "ebs": {
+                    "attach_time": "2024-07-24T14:04:16+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-0c90dca5bec28fceb"
+                }
+            },
+            {
+                "device_name": "/dev/xvdb",
+                "ebs": {
+                    "attach_time": "2024-07-24T14:04:16+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-0897a48d2a90fdcc3"
+                }
+            },
+            {
+                "device_name": "/dev/xvdc",
+                "ebs": {
+                    "attach_time": "2024-07-24T14:04:16+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-01861dc51888bda97"
+                }
+            }
+        ],
+        "capacity_reservation_specification": {
+            "capacity_reservation_preference": "open"
+        },
+        "client_token": "c51f451c73714868b26fbe4a4e32e5fc",
+        "cpu_options": {
+            "core_count": 1,
+            "threads_per_core": 2
+        },
+        "current_instance_boot_mode": "legacy-bios",
+        "ebs_optimized": false,
+        "ena_support": true,
+        "enclave_options": {
+            "enabled": false
+        },
+        "group_names": [
+            "ungrouped"
+        ],
+        "groups": {
+            "all": [
+                "metaluna-eoc2-t1.freenet-dls.de",
+                "metaluna-eoc2-t2.freenet-dls.de",
+                "metaluna-eoc2-t3.freenet-dls.de"
+            ],
+            "ungrouped": [
+                "metaluna-eoc2-t1.freenet-dls.de",
+                "metaluna-eoc2-t2.freenet-dls.de",
+                "metaluna-eoc2-t3.freenet-dls.de"
+            ]
+        },
+        "hibernation_options": {
+            "configured": false
+        },
+        "hypervisor": "xen",
+        "image_id": "ami-075d8cd2ff03fa6e9",
+        "instance_id": "i-0876c40e36bef9fd4",
+        "instance_type": "t3.small",
+        "inventory_dir": "/runner/inventory",
+        "inventory_file": "/runner/inventory/hosts",
+        "inventory_hostname": "metaluna-eoc2-t1.freenet-dls.de",
+        "inventory_hostname_short": "metaluna-eoc2-t1",
+        "key_name": "AWX",
+        "launch_time": "2024-07-26T13:48:47+00:00",
+        "maintenance_options": {
+            "auto_recovery": "default"
+        },
+        "metadata_options": {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "required",
+            "instance_metadata_tags": "enabled",
+            "state": "applied"
+        },
+        "monitoring": {
+            "state": "disabled"
+        },
+        "network_interfaces": [
+            {
+                "attachment": {
+                    "attach_time": "2024-07-24T14:04:15+00:00",
+                    "attachment_id": "eni-attach-0910d7b77b19eba30",
+                    "delete_on_termination": true,
+                    "device_index": 0,
+                    "network_card_index": 0,
+                    "status": "attached"
+                },
+                "description": "",
+                "groups": [
+                    {
+                        "group_id": "sg-0b17a3467ff7021fd",
+                        "group_name": "mwsa"
+                    }
+                ],
+                "interface_type": "interface",
+                "ipv6_addresses": [],
+                "mac_address": "02:19:6a:02:8d:cf",
+                "network_interface_id": "eni-0528a57778067339a",
+                "owner_id": "381492154540",
+                "private_dns_name": "ip-10-209-156-45.eu-central-1.compute.internal",
+                "private_ip_address": "10.209.156.45",
+                "private_ip_addresses": [
+                    {
+                        "primary": true,
+                        "private_dns_name": "ip-10-209-156-45.eu-central-1.compute.internal",
+                        "private_ip_address": "10.209.156.45"
+                    }
+                ],
+                "source_dest_check": true,
+                "status": "in-use",
+                "subnet_id": "subnet-0dcd89a1ec3c8cba5",
+                "vpc_id": "vpc-0c6e1291040b42398"
+            }
+        ],
+        "omit": "__omit_place_holder__fa559c129a9f54fac3e21489125aa9d15bd42422",
+        "owner_id": "381492154540",
+        "placement": {
+            "availability_zone": "eu-central-1a",
+            "group_name": "",
+            "region": "eu-central-1",
+            "tenancy": "default"
+        },
+        "platform_details": "Linux/UNIX",
+        "playbook_dir": "/runner/project",
+        "private_dns_name": "ip-10-209-156-45.eu-central-1.compute.internal",
+        "private_dns_name_options": {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+        },
+        "private_ip_address": "10.209.156.45",
+        "product_codes": [],
+        "public_dns_name": "",
+        "remote_host_enabled": "true",
+        "remote_host_id": 21499,
+        "remote_tower_enabled": "true",
+        "remote_tower_id": 21499,
+        "requester_id": "",
+        "reservation_id": "r-0ecc399359768e954",
+        "root_device_name": "/dev/xvda",
+        "root_device_type": "ebs",
+        "security_groups": [
+            {
+                "group_id": "sg-0b17a3467ff7021fd",
+                "group_name": "mwsa"
+            }
+        ],
+        "source_dest_check": true,
+        "state": {
+            "code": 16,
+            "name": "running"
+        },
+        "state_transition_reason": "",
+        "subnet_id": "subnet-0dcd89a1ec3c8cba5",
+        "tags": {
+            "Name": "metaluna-eoc2-t1.freenet-dls.de",
+            "hwdb_ansprechpartner": "Enterprise Operations RA",
+            "hwdb_bereich": "Infrastruktur",
+            "hwdb_funktionsgruppe": "md.MWSABetrieb.test.srv",
+            "hwdb_itsystem": "MWSABetrieb",
+            "hwdb_kst": "300_7490",
+            "hwdb_mandant": "md",
+            "hwdb_projektverantwortlicher": "Lorenz Matzen",
+            "hwdb_servicegruppe": "srv",
+            "hwdb_umgebung": "test"
+        },
+        "tower_inventory_id": 118,
+        "tower_inventory_name": "Testing - Smart Inventory - EC2",
+        "tower_job_id": 684576,
+        "tower_job_launch_type": "relaunch",
+        "tower_job_template_id": 872,
+        "tower_job_template_name": "Testing - EO - AWX-Inventory to JSON for PowerBI",
+        "tower_project_revision": "694a8094c0a2b46e71b5d5f2f2fdc01cc513ae32",
+        "tower_project_scm_branch": "testing",
+        "tower_user_email": "Boy.Reese@freenet.ag",
+        "tower_user_first_name": "Boy",
+        "tower_user_id": 42,
+        "tower_user_last_name": "Reese",
+        "tower_user_name": "breese",
+        "usage_operation": "RunInstances",
+        "usage_operation_update_time": "2024-07-24T14:04:15+00:00",
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-0c6e1291040b42398"
+    },
+    "metaluna-eoc2-t2.freenet-dls.de": {
+        "ami_launch_index": 0,
+        "ansible_check_mode": false,
+        "ansible_config_file": null,
+        "ansible_diff_mode": false,
+        "ansible_facts": {},
+        "ansible_forks": 5,
+        "ansible_host": "10.209.156.19",
+        "ansible_inventory_sources": [
+            "/runner/inventory/hosts"
+        ],
+        "ansible_playbook_python": "/usr/bin/python3",
+        "ansible_run_tags": [
+            "all"
+        ],
+        "ansible_skip_tags": [],
+        "ansible_verbosity": 0,
+        "ansible_version": {
+            "full": "2.16.7",
+            "major": 2,
+            "minor": 16,
+            "revision": 7,
+            "string": "2.16.7"
+        },
+        "architecture": "arm64",
+        "awx_inventory_id": 118,
+        "awx_inventory_name": "Testing - Smart Inventory - EC2",
+        "awx_job_id": 684576,
+        "awx_job_launch_type": "relaunch",
+        "awx_job_template_id": 872,
+        "awx_job_template_name": "Testing - EO - AWX-Inventory to JSON for PowerBI",
+        "awx_project_revision": "694a8094c0a2b46e71b5d5f2f2fdc01cc513ae32",
+        "awx_project_scm_branch": "testing",
+        "awx_user_email": "Boy.Reese@freenet.ag",
+        "awx_user_first_name": "Boy",
+        "awx_user_id": 42,
+        "awx_user_last_name": "Reese",
+        "awx_user_name": "breese",
+        "block_device_mappings": [
+            {
+                "device_name": "/dev/xvda",
+                "ebs": {
+                    "attach_time": "2024-07-24T14:30:58+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-0fbd6841247b1f0d6"
+                }
+            },
+            {
+                "device_name": "/dev/xvdb",
+                "ebs": {
+                    "attach_time": "2024-07-24T14:30:58+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-0e06a60f1662db132"
+                }
+            },
+            {
+                "device_name": "/dev/xvdc",
+                "ebs": {
+                    "attach_time": "2024-07-24T14:30:58+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-0906b438ec79ca1f8"
+                }
+            }
+        ],
+        "boot_mode": "uefi",
+        "capacity_reservation_specification": {
+            "capacity_reservation_preference": "open"
+        },
+        "client_token": "eb979716dd564da2b4199aac817110ce",
+        "cpu_options": {
+            "core_count": 2,
+            "threads_per_core": 1
+        },
+        "current_instance_boot_mode": "uefi",
+        "ebs_optimized": false,
+        "ena_support": true,
+        "enclave_options": {
+            "enabled": false
+        },
+        "group_names": [
+            "ungrouped"
+        ],
+        "groups": {
+            "all": [
+                "metaluna-eoc2-t1.freenet-dls.de",
+                "metaluna-eoc2-t2.freenet-dls.de",
+                "metaluna-eoc2-t3.freenet-dls.de"
+            ],
+            "ungrouped": [
+                "metaluna-eoc2-t1.freenet-dls.de",
+                "metaluna-eoc2-t2.freenet-dls.de",
+                "metaluna-eoc2-t3.freenet-dls.de"
+            ]
+        },
+        "hibernation_options": {
+            "configured": false
+        },
+        "hypervisor": "xen",
+        "image_id": "ami-09c78c91d944d3be1",
+        "instance_id": "i-0f7152e1471b88053",
+        "instance_type": "t4g.small",
+        "inventory_dir": "/runner/inventory",
+        "inventory_file": "/runner/inventory/hosts",
+        "inventory_hostname": "metaluna-eoc2-t2.freenet-dls.de",
+        "inventory_hostname_short": "metaluna-eoc2-t2",
+        "key_name": "AWX",
+        "launch_time": "2024-07-24T14:30:57+00:00",
+        "maintenance_options": {
+            "auto_recovery": "default"
+        },
+        "metadata_options": {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "required",
+            "instance_metadata_tags": "enabled",
+            "state": "applied"
+        },
+        "monitoring": {
+            "state": "disabled"
+        },
+        "network_interfaces": [
+            {
+                "attachment": {
+                    "attach_time": "2024-07-24T14:30:57+00:00",
+                    "attachment_id": "eni-attach-05bf40fdfb6ee4275",
+                    "delete_on_termination": true,
+                    "device_index": 0,
+                    "network_card_index": 0,
+                    "status": "attached"
+                },
+                "description": "",
+                "groups": [
+                    {
+                        "group_id": "sg-0b17a3467ff7021fd",
+                        "group_name": "mwsa"
+                    }
+                ],
+                "interface_type": "interface",
+                "ipv6_addresses": [],
+                "mac_address": "02:48:cd:96:76:79",
+                "network_interface_id": "eni-0165d92e2eaa41808",
+                "owner_id": "381492154540",
+                "private_dns_name": "ip-10-209-156-19.eu-central-1.compute.internal",
+                "private_ip_address": "10.209.156.19",
+                "private_ip_addresses": [
+                    {
+                        "primary": true,
+                        "private_dns_name": "ip-10-209-156-19.eu-central-1.compute.internal",
+                        "private_ip_address": "10.209.156.19"
+                    }
+                ],
+                "source_dest_check": true,
+                "status": "in-use",
+                "subnet_id": "subnet-0dcd89a1ec3c8cba5",
+                "vpc_id": "vpc-0c6e1291040b42398"
+            }
+        ],
+        "omit": "__omit_place_holder__fa559c129a9f54fac3e21489125aa9d15bd42422",
+        "owner_id": "381492154540",
+        "placement": {
+            "availability_zone": "eu-central-1a",
+            "group_name": "",
+            "region": "eu-central-1",
+            "tenancy": "default"
+        },
+        "platform_details": "Linux/UNIX",
+        "playbook_dir": "/runner/project",
+        "private_dns_name": "ip-10-209-156-19.eu-central-1.compute.internal",
+        "private_dns_name_options": {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+        },
+        "private_ip_address": "10.209.156.19",
+        "product_codes": [],
+        "public_dns_name": "",
+        "remote_host_enabled": "true",
+        "remote_host_id": 21500,
+        "remote_tower_enabled": "true",
+        "remote_tower_id": 21500,
+        "requester_id": "",
+        "reservation_id": "r-0b4c7ea5147d9c324",
+        "root_device_name": "/dev/xvda",
+        "root_device_type": "ebs",
+        "security_groups": [
+            {
+                "group_id": "sg-0b17a3467ff7021fd",
+                "group_name": "mwsa"
+            }
+        ],
+        "source_dest_check": true,
+        "state": {
+            "code": 16,
+            "name": "running"
+        },
+        "state_transition_reason": "",
+        "subnet_id": "subnet-0dcd89a1ec3c8cba5",
+        "tags": {
+            "Name": "metaluna-eoc2-t2.freenet-dls.de",
+            "hwdb_ansprechpartner": "Enterprise Operations RA",
+            "hwdb_bereich": "Infrastruktur",
+            "hwdb_funktionsgruppe": "md.MWSABetrieb.test.srv",
+            "hwdb_itsystem": "MWSABetrieb",
+            "hwdb_kst": "300_7490",
+            "hwdb_mandant": "md",
+            "hwdb_projektverantwortlicher": "Lorenz Matzen",
+            "hwdb_servicegruppe": "srv",
+            "hwdb_umgebung": "test"
+        },
+        "tower_inventory_id": 118,
+        "tower_inventory_name": "Testing - Smart Inventory - EC2",
+        "tower_job_id": 684576,
+        "tower_job_launch_type": "relaunch",
+        "tower_job_template_id": 872,
+        "tower_job_template_name": "Testing - EO - AWX-Inventory to JSON for PowerBI",
+        "tower_project_revision": "694a8094c0a2b46e71b5d5f2f2fdc01cc513ae32",
+        "tower_project_scm_branch": "testing",
+        "tower_user_email": "Boy.Reese@freenet.ag",
+        "tower_user_first_name": "Boy",
+        "tower_user_id": 42,
+        "tower_user_last_name": "Reese",
+        "tower_user_name": "breese",
+        "usage_operation": "RunInstances",
+        "usage_operation_update_time": "2024-07-24T14:30:57+00:00",
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-0c6e1291040b42398"
+    },
+    "metaluna-eoc2-t3.freenet-dls.de": {
+        "ami_launch_index": 0,
+        "ansible_check_mode": false,
+        "ansible_config_file": null,
+        "ansible_diff_mode": false,
+        "ansible_facts": {},
+        "ansible_forks": 5,
+        "ansible_host": "10.209.156.56",
+        "ansible_inventory_sources": [
+            "/runner/inventory/hosts"
+        ],
+        "ansible_playbook_python": "/usr/bin/python3",
+        "ansible_run_tags": [
+            "all"
+        ],
+        "ansible_skip_tags": [],
+        "ansible_verbosity": 0,
+        "ansible_version": {
+            "full": "2.16.7",
+            "major": 2,
+            "minor": 16,
+            "revision": 7,
+            "string": "2.16.7"
+        },
+        "architecture": "x86_64",
+        "awx_inventory_id": 118,
+        "awx_inventory_name": "Testing - Smart Inventory - EC2",
+        "awx_job_id": 684576,
+        "awx_job_launch_type": "relaunch",
+        "awx_job_template_id": 872,
+        "awx_job_template_name": "Testing - EO - AWX-Inventory to JSON for PowerBI",
+        "awx_project_revision": "694a8094c0a2b46e71b5d5f2f2fdc01cc513ae32",
+        "awx_project_scm_branch": "testing",
+        "awx_user_email": "Boy.Reese@freenet.ag",
+        "awx_user_first_name": "Boy",
+        "awx_user_id": 42,
+        "awx_user_last_name": "Reese",
+        "awx_user_name": "breese",
+        "block_device_mappings": [
+            {
+                "device_name": "/dev/sda1",
+                "ebs": {
+                    "attach_time": "2024-07-31T08:47:45+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-0ccbd2aaaf3f8d82d"
+                }
+            },
+            {
+                "device_name": "/dev/xvdb",
+                "ebs": {
+                    "attach_time": "2024-07-31T08:47:45+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-0226a342f2d00e1fa"
+                }
+            },
+            {
+                "device_name": "/dev/xvdc",
+                "ebs": {
+                    "attach_time": "2024-07-31T08:47:45+00:00",
+                    "delete_on_termination": true,
+                    "status": "attached",
+                    "volume_id": "vol-03784b7361dd29b98"
+                }
+            }
+        ],
+        "capacity_reservation_specification": {
+            "capacity_reservation_preference": "open"
+        },
+        "client_token": "1aa7e09b560d42cbbebcd5ae800c1708",
+        "cpu_options": {
+            "core_count": 1,
+            "threads_per_core": 2
+        },
+        "current_instance_boot_mode": "legacy-bios",
+        "ebs_optimized": false,
+        "ena_support": true,
+        "enclave_options": {
+            "enabled": false
+        },
+        "group_names": [
+            "ungrouped"
+        ],
+        "groups": {
+            "all": [
+                "metaluna-eoc2-t1.freenet-dls.de",
+                "metaluna-eoc2-t2.freenet-dls.de",
+                "metaluna-eoc2-t3.freenet-dls.de"
+            ],
+            "ungrouped": [
+                "metaluna-eoc2-t1.freenet-dls.de",
+                "metaluna-eoc2-t2.freenet-dls.de",
+                "metaluna-eoc2-t3.freenet-dls.de"
+            ]
+        },
+        "hibernation_options": {
+            "configured": false
+        },
+        "hypervisor": "xen",
+        "image_id": "ami-0f18276190490b6e3",
+        "instance_id": "i-09f5f1d1148393625",
+        "instance_type": "t3.small",
+        "inventory_dir": "/runner/inventory",
+        "inventory_file": "/runner/inventory/hosts",
+        "inventory_hostname": "metaluna-eoc2-t3.freenet-dls.de",
+        "inventory_hostname_short": "metaluna-eoc2-t3",
+        "key_name": "AWX",
+        "launch_time": "2024-07-31T08:47:44+00:00",
+        "maintenance_options": {
+            "auto_recovery": "default"
+        },
+        "metadata_options": {
+            "http_endpoint": "enabled",
+            "http_protocol_ipv6": "disabled",
+            "http_put_response_hop_limit": 1,
+            "http_tokens": "required",
+            "instance_metadata_tags": "enabled",
+            "state": "applied"
+        },
+        "monitoring": {
+            "state": "disabled"
+        },
+        "network_interfaces": [
+            {
+                "attachment": {
+                    "attach_time": "2024-07-31T08:47:44+00:00",
+                    "attachment_id": "eni-attach-068050c14a01a484d",
+                    "delete_on_termination": true,
+                    "device_index": 0,
+                    "network_card_index": 0,
+                    "status": "attached"
+                },
+                "description": "",
+                "groups": [
+                    {
+                        "group_id": "sg-0b17a3467ff7021fd",
+                        "group_name": "mwsa"
+                    }
+                ],
+                "interface_type": "interface",
+                "ipv6_addresses": [],
+                "mac_address": "02:98:32:77:32:99",
+                "network_interface_id": "eni-00daa3a1650bdeec6",
+                "owner_id": "381492154540",
+                "private_dns_name": "ip-10-209-156-56.eu-central-1.compute.internal",
+                "private_ip_address": "10.209.156.56",
+                "private_ip_addresses": [
+                    {
+                        "primary": true,
+                        "private_dns_name": "ip-10-209-156-56.eu-central-1.compute.internal",
+                        "private_ip_address": "10.209.156.56"
+                    }
+                ],
+                "source_dest_check": true,
+                "status": "in-use",
+                "subnet_id": "subnet-0dcd89a1ec3c8cba5",
+                "vpc_id": "vpc-0c6e1291040b42398"
+            }
+        ],
+        "omit": "__omit_place_holder__fa559c129a9f54fac3e21489125aa9d15bd42422",
+        "owner_id": "381492154540",
+        "placement": {
+            "availability_zone": "eu-central-1a",
+            "group_name": "",
+            "region": "eu-central-1",
+            "tenancy": "default"
+        },
+        "platform_details": "Linux/UNIX",
+        "playbook_dir": "/runner/project",
+        "private_dns_name": "ip-10-209-156-56.eu-central-1.compute.internal",
+        "private_dns_name_options": {
+            "enable_resource_name_dns_a_record": false,
+            "enable_resource_name_dns_aaaa_record": false,
+            "hostname_type": "ip-name"
+        },
+        "private_ip_address": "10.209.156.56",
+        "product_codes": [],
+        "public_dns_name": "",
+        "remote_host_enabled": "true",
+        "remote_host_id": 21502,
+        "remote_tower_enabled": "true",
+        "remote_tower_id": 21502,
+        "requester_id": "",
+        "reservation_id": "r-01620142e6711db73",
+        "root_device_name": "/dev/sda1",
+        "root_device_type": "ebs",
+        "security_groups": [
+            {
+                "group_id": "sg-0b17a3467ff7021fd",
+                "group_name": "mwsa"
+            }
+        ],
+        "source_dest_check": true,
+        "state": {
+            "code": 16,
+            "name": "running"
+        },
+        "state_transition_reason": "",
+        "subnet_id": "subnet-0dcd89a1ec3c8cba5",
+        "tags": {
+            "Name": "metaluna-eoc2-t3.freenet-dls.de",
+            "hwdb_ansprechpartner": "Enterprise Operations RA",
+            "hwdb_bereich": "Infrastruktur",
+            "hwdb_funktionsgruppe": "md.MWSABetrieb.test.srv",
+            "hwdb_itsystem": "MWSABetrieb",
+            "hwdb_kst": "300_7490",
+            "hwdb_mandant": "md",
+            "hwdb_projektverantwortlicher": "Lorenz Matzen",
+            "hwdb_servicegruppe": "srv",
+            "hwdb_umgebung": "test"
+        },
+        "tower_inventory_id": 118,
+        "tower_inventory_name": "Testing - Smart Inventory - EC2",
+        "tower_job_id": 684576,
+        "tower_job_launch_type": "relaunch",
+        "tower_job_template_id": 872,
+        "tower_job_template_name": "Testing - EO - AWX-Inventory to JSON for PowerBI",
+        "tower_project_revision": "694a8094c0a2b46e71b5d5f2f2fdc01cc513ae32",
+        "tower_project_scm_branch": "testing",
+        "tower_user_email": "Boy.Reese@freenet.ag",
+        "tower_user_first_name": "Boy",
+        "tower_user_id": 42,
+        "tower_user_last_name": "Reese",
+        "tower_user_name": "breese",
+        "usage_operation": "RunInstances",
+        "usage_operation_update_time": "2024-07-31T08:47:44+00:00",
+        "virtualization_type": "hvm",
+        "vpc_id": "vpc-0c6e1291040b42398"
+    }
+}

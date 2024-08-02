@@ -1,5 +1,5 @@
 # playbook-ansible
-meine erste playbook pushen
+
 ---
 - name: API endoflife.data
   hosts: localhost

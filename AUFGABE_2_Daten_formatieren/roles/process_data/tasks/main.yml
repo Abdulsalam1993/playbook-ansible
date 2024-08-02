@@ -1,0 +1,15 @@
+---
+
+# Diese Rolle erwartet die Eingabedaten in der Variable "input_data" und schreibt das Ergebnis in die Variable "output_data"
+
+- name: "Zeige Eingabedaten an"
+  debug:
+    var: input_data
+
+- name: "Speichere Ausgabe in output_data"
+  set_fact:
+    output_data: "{{ input_data | dict2items }}"
+
+- name: "Zeige Ausgabedaten an"
+  debug:
+    var: Output_data
